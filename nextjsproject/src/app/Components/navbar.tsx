@@ -1,4 +1,6 @@
 
+import { LuDownload } from "react-icons/lu";
+import LinkButton from "./LinkButton";
 import Logo from "./Logo";
 import Link from "next/link";
 const navlinks=[
@@ -27,9 +29,9 @@ export default function Navbar(){
        ) 
     })}
 </ul>
-
+<LinkButton href="/document/cv.pdf" text="Download " download icon ={LuDownload} iconPosition="left"/>
 
 </div>
         </nav>
-    )
+    ) 
 }
